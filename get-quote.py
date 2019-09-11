@@ -1,11 +1,18 @@
+import random
+
+
 def mainMethod():
-  print("Keep it logically awesome.")
+    print("Keep it logically awesome.")
 
-  #f = open("quotes.txt")
-  #quotes = f.readlines()
-  #f.close()
+    f = open("quotes.txt")
+    quotes = f.readlines()
+    f.close()
 
-  #print(quotes)
+    last = 13
+    rnd = random.randint(0, last)
 
-if __name__== "__main__":
-  mainMethod()
+    print(quotes[rnd])
+
+
+if __name__ == "__main__":
+    mainMethod()
